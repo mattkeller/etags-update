@@ -8,7 +8,7 @@ when saving a file.
 Installing
 ==========
 
-Put etags-update.pl in your shell's PATH, making sure it
+Put etags-update.pl in your shell's PATH, making sure it is
 executable. For instance:
 
 > # mv etags-update.pl ~/bin
