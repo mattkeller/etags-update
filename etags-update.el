@@ -166,10 +166,9 @@ the match or nil."
       (cond
        ((gethash file etu/no-prompt-files) nil)
        ((and etu/append-using-font-lock (null font-lock-defaults)) nil)
-       ((y-or-n-p (concat "Add " file " to the TAGS file? "))
-        (progn
-          (puthash file 1 etu/no-prompt-files)
-          t))
+       ((not (y-or-n-p (concat "Add " file " to the TAGS file? ")))
+        (puthash file 1 etu/no-prompt-files)
+        nil)
        (t nil)))
      (t (error "Invalid etu/append-file-action action: %s" action)))))
 
