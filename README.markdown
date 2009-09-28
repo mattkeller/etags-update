@@ -68,6 +68,21 @@ If 'prompt, ask if this file should be added (default).
 If set to a function, the function should return one of 'add, 'prompt,
 or 'nil.
 
+For example, I use the following code to add files to TAGS when they
+are "in my project" according to
+[mk-project.el](http://www.littleredbat.net/mk/code/mk-project.html)
+and prompt otherwise:
+
+    (defun mk-etags-update-append-file-p (file)
+      (cond
+        ((and mk-proj-name
+              mk-proj-tags-file
+              (string= mk-proj-basedir (substring file 0 (length mk-proj-basedir)))) ; eg, file *in* project
+         'add)
+        (t 'prompt)))
+
+    (setq etu/append-file-prompt 'mk-etags-update-append-file-p)
+
 
 etu/append-using-font-lock
 --------------------------
