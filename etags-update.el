@@ -21,7 +21,7 @@
 
 ;;; Commentary:
 ;;
-;; See the README at http://github.com/mattkeller/etags-update/README
+;; See the README at http://github.com/mattkeller/etags-update/
 ;;
 ;; Note: etags-update.el requires etags-update.pl in your PATH.
 
