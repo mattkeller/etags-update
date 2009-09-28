@@ -11,17 +11,17 @@ Installing
 Put etags-update.pl in your shell's PATH, making sure it is
 executable. For instance:
 
-> # mv etags-update.pl ~/bin
-> # chmod 755 ~/bin/etags-update.pl
+     # mv etags-update.pl ~/bin
+     # chmod 755 ~/bin/etags-update.pl
 
 To install the minor-mode, put the etags-update.el file in your
 load-path:
 
-> # mv etags-update.el ~/elisp
+     # mv etags-update.el ~/elisp
 
 And require it from your .emacs file:
 
-> (require 'etags-update)
+     (require 'etags-update)
 
 
 Using
@@ -29,11 +29,11 @@ Using
 
 First, load your project's TAGS file:
 
-> M-x visit-tags-table <your-tags-file>
+     M-x visit-tags-table <your-tags-file>
 
 Then toggle the minor-mode on with:
 
-> M-x etags-update-mode
+     M-x etags-update-mode
 
 The same command toggles the minor-mode off.
 
