@@ -1,4 +1,4 @@
-;;;; etags-update.el
+;;; etags-update.el --- update TAGS when saving a file
 ;;
 ;; Minor mode to update TAGS when a file is saved
 
@@ -21,7 +21,9 @@
 
 ;;; Commentary:
 ;;
-;; See the README at http://github.com/mattkeller/etags-update/
+;; etags-update is a Emacs global minor mode that updates your TAGS
+;; when saving a file.  See the README file for more information:
+;; https://github.com/mattkeller/etags-update#readme
 ;;
 ;; Note: etags-update.el requires etags-update.pl in your PATH.
 
