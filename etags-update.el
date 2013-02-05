@@ -171,7 +171,7 @@ the match or nil."
        ((not (y-or-n-p (concat "Add " file " to the TAGS file? ")))
         (puthash file 1 etu/no-prompt-files)
         nil)
-       (t nil)))
+       (t t)))
      (t (error "Invalid etu/append-file-action action: %s" action)))))
 
 (defun etu/update-tags-for-file ()
